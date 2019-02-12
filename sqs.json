@@ -31,7 +31,6 @@
             "messageId": {
               "$id": "#/properties/Records/items/properties/messageId",
               "type": "string",
-              "title": "The Messageid Schema",
               "default": "",
               "examples": [
                 "c80e8021-a70a-42c7-a470-796e1186f753"
@@ -41,7 +40,6 @@
             "receiptHandle": {
               "$id": "#/properties/Records/items/properties/receiptHandle",
               "type": "string",
-              "title": "The Receipthandle Schema",
               "default": "",
               "examples": [
                 "AQEBJQ+/u6NsnT5t8Q/VbVxgdUl4TMKZ5FqhksRdIQvLBhwNvADoBxYSOVeCBXdnS9P+erlTtwEALHsnBXynkfPLH3BOUqmgzP25U8kl8eHzq6RAlzrSOfTO8ox9dcp6GLmW33YjO3zkq5VRYyQlJgLCiAZUpY2D4UQcE5D1Vm8RoKfbE+xtVaOctYeINjaQJ1u3mWx9T7tork3uAlOe1uyFjCWU5aPX/1OHhWCGi2EPPZj6vchNqDOJC/Y2k1gkivqCjz1CZl6FlZ7UVPOx3AMoszPuOYZ+Nuqpx2uCE2MHTtMHD8PVjlsWirt56oUr6JPp9aRGo6bitPIOmi4dX0FmuMKD6u/JnuZCp+AXtJVTmSHS8IXt/twsKU7A+fiMK01NtD5msNgVPoe9JbFtlGwvTQ=="
@@ -51,7 +49,6 @@
             "body": {
               "$id": "#/properties/Records/items/properties/body",
               "type": "string",
-              "title": "The Body Schema",
               "default": "",
               "examples": [
                 "{\"foo\":\"bar\"}"
@@ -61,7 +58,6 @@
             "attributes": {
               "$id": "#/properties/Records/items/properties/attributes",
               "type": "object",
-              "title": "The Attributes Schema",
               "required": [
                 "ApproximateReceiveCount",
                 "SentTimestamp",
@@ -72,7 +68,6 @@
                 "ApproximateReceiveCount": {
                   "$id": "#/properties/Records/items/properties/attributes/properties/ApproximateReceiveCount",
                   "type": "string",
-                  "title": "The Approximatereceivecount Schema",
                   "default": "",
                   "examples": [
                     "3"
@@ -82,7 +77,6 @@
                 "SentTimestamp": {
                   "$id": "#/properties/Records/items/properties/attributes/properties/SentTimestamp",
                   "type": "string",
-                  "title": "The Senttimestamp Schema",
                   "default": "",
                   "examples": [
                     "1529104986221"
@@ -92,7 +86,6 @@
                 "SenderId": {
                   "$id": "#/properties/Records/items/properties/attributes/properties/SenderId",
                   "type": "string",
-                  "title": "The Senderid Schema",
                   "default": "",
                   "examples": [
                     "594035263019"
@@ -102,7 +95,6 @@
                "ApproximateFirstReceiveTimestamp": {
                  "$id": "#/properties/Records/items/properties/attributes/properties/ApproximateFirstReceiveTimestamp",
                  "type": "string",
-                 "title": "The Approximatefirstreceivetimestamp Schema",
                  "default": "",
                  "examples": [
                    "1529104986230"
@@ -114,12 +106,10 @@
            "messageAttributes": {
              "$id": "#/properties/Records/items/properties/messageAttributes",
              "type": "object",
-             "title": "The Messageattributes Schema"
            },
            "md5OfBody": {
              "$id": "#/properties/Records/items/properties/md5OfBody",
              "type": "string",
-             "title": "The Md5ofbody Schema",
              "default": "",
              "examples": [
                "9bb58f26192e4ba00f01e2e7b136bbd8"
@@ -129,27 +119,24 @@
            "eventSource": {
              "$id": "#/properties/Records/items/properties/eventSource",
              "type": "string",
-             "title": "The Eventsource Schema",
              "default": "",
              "examples": [
                "aws:sqs"
-            ],
-            "pattern": "^(.*)$"
+             ],
+             "pattern": "^(.*)$"
           },
            "eventSourceARN": {
              "$id": "#/properties/Records/items/properties/eventSourceARN",
-            "type": "string",
-          "title": "The Eventsourcearn Schema",
-           "default": "",
-            "examples": [
-             "arn:aws:sqs:us-west-2:594035263019:NOTFIFOQUEUE"
-            ],
-            "pattern": "^([a-zA-Z0-9:-]*)$"
+             "type": "string",
+             "default": "",
+             "examples": [
+               "arn:aws:sqs:us-west-2:594035263019:NOTFIFOQUEUE"
+             ],
+             "pattern": "^([a-zA-Z0-9:-]*)$"
            },
           "awsRegion": {
               "$id": "#/properties/Records/items/properties/awsRegion",
               "type": "string",
-              "title": "The Awsregion Schema",
               "default": "",
               "examples": [
                 "us-west-2"
